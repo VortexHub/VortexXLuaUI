@@ -32,7 +32,7 @@ local library = {
 		unhoveredOptionTop = Color3.fromRGB(50, 50, 50),
 		hoveredOptionBottom = Color3.fromRGB(45, 45, 45),
 		unhoveredOptionBottom = Color3.fromRGB(35, 35, 35),
-		tabText = Color3.fromRGB(255, 128, 227)
+		tabText = Color3.fromRGB(80, 245, 245)
 	},
 	gui_parent = (function()
 		local x, c = pcall(function()
