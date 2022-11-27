@@ -1,6 +1,6 @@
 local library = {
-	Version = "Beta",
-	WorkspaceName = "Vortex Hub Premium Scripts",
+	Version = "Vortex",
+	WorkspaceName = "xSoku Hub Premium Version",
 	flags = {},
 	signals = {},
 	objects = {},
@@ -15,7 +15,7 @@ local library = {
 		easingDirection = Enum.EasingDirection.Out
 	},
 	colors = {
-		main = Color3.fromRGB(255, 128, 227),
+        main = Color3.fromRGB(80, 245, 245),
 		background = Color3.fromRGB(40, 40, 40),
 		outerBorder = Color3.fromRGB(15, 15, 15),
 		innerBorder = Color3.fromRGB(73, 63, 73),
@@ -6719,9 +6719,9 @@ function library:CreateWindow(options, ...)
 		}
 		local daaata = {{"AddTextbox", "__Designer.Textbox.ImageAssetID", backgroundsection, {
 			Name = "Image Asset ID",
-			Placeholder = "rbxassetid://10612418094",
+			Placeholder = "rbxassetid://4427304036",
 			Flag = "__Designer.Background.ImageAssetID",
-			Value = "rbxassetid://10612418094",
+			Value = "rbxassetid://4427304036",
 			Callback = updatecolorsnotween
 		}}, {"AddColorpicker", "__Designer.Colorpicker.ImageColor", backgroundsection, {
 			Name = "Image Color",
@@ -6786,7 +6786,7 @@ function library:CreateWindow(options, ...)
 				lasthidebing = os.clock()
 			end
 		}}, {"AddLabel", "__Designer.Label.Version", settingssection, {
-			Name = "Scripts Version: " .. tostring(library.Version or "?")
+			Name = "Make By : " .. tostring(library.Version or "?")
 		}}}
 		if setclipboard and daaata[8] then
 			local common_table = daaata[8][4]
@@ -6840,7 +6840,7 @@ function library:CreateWindow(options, ...)
 		end
 		if options.Credit ~= false then
 			daaata[1 + #daaata] = {"AddLabel", "__Designer.Label.Creator", detailssection, {
-				Text = "DC : ITzVortexPxwer <3#1529"
+				Text = "DC : xSoku Hub"
 			}}
 		elseif "Gee, thanks for your support." then
 		end
